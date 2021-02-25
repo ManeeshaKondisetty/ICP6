@@ -1,0 +1,7 @@
+.image{
+  height:80em; background-size:cover; width:fit-content;
+  background-image:url('~images/bgimg.jpg');
+  background-position:50% 50%;
+}
+
+

@@ -1,0 +1,40 @@
+#title{
+  font-size: 70px;
+  text-align: center;
+  font-family: Optima,"Helvetica Neue",sans-serif;
+}
+
+li{
+  margin-right: 20px;
+  color: darkslateblue;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.marquee {
+  width: 1500px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee img {
+  display: inline-block;
+  animation: rotation 8s linear infinite;
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+

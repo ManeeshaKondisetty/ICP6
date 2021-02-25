@@ -1,0 +1,23 @@
+.parent-container {
+  position: relative;
+  height:100%;
+  width: 100%;
+}
+
+.child-container {
+  font-family: "Palatino", "URW Palladio L", serif	;
+  color: rgba(159,0,34,1);
+  margin-top: 80px;
+  background: rgba(255,255,255,0.25);
+
+}
+.desc {
+  margin-top: 40px;
+  font-family: "Courier New", "monospace",sans-serif;
+  font-size: 20px;
+
+}
+
+#textinput{
+}
+

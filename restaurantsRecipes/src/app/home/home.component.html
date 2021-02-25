@@ -1,0 +1,16 @@
+<div class="parent-container">
+  <div class="child-container">
+    <h2>Hello, Welcome to <b>Find Your Recipe!!!
+    </b></h2><br><br>
+    <span class="desc"><b>Search for your favourite recipes or food joints around you.</b></span><br><br><br>
+    <form>
+      <div class="form-group" style="align-items: center">
+        <label>Subscribe to our news letter:</label><br>
+          <input type="text" placeholder="name@example.com" [value]="searchValue" style="width: 250px"/>
+          <button (click)="addSubscriber()" class="btn btn primary col-lg-2 col-lg-offset-5">Submit</button>
+
+        <br>
+      </div>
+    </form>
+  </div>
+</div>

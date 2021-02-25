@@ -1,0 +1,62 @@
+.parent-container {
+  position: relative;
+  height:100%;
+  width: 100%;
+}
+
+.child-container {
+  color: white;
+  text-align: center;
+  position: center;
+
+}
+.desc {
+  font-family: Georgia;
+  font-size: 17px;
+}
+
+.thumbnail {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  min-width: 40%;
+  border-radius: 5px;
+}
+
+.thumbnail-description {
+  min-height: 40px;
+}
+
+.thumbnail:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+}
+
+.wrap{
+  height: 100px;
+  width: 150px;
+  display: flex;
+}
+
+.list-group-item-heading{
+  color: darkgoldenrod;
+  font-family: "Palatino", "URW Palladio L", serif;
+  font-size: 25px;
+  padding: 0px;
+}
+.list-group-item-text{
+color: black;
+  text-align: left;
+}
+
+h1{
+  font-family: "Palatino", "URW Palladio L", serif	;
+  background: rgba(255,255,255,0.25);
+  color: rgba(159,0,34,1);
+
+}
+.panel-heading{
+  font-family:"Verdana", sans-serif ;
+  font-size: 30px;
+  background: rgba(255,255,255,0.25);
+  color: rgba(255, 5, 236, 0.78);
+}

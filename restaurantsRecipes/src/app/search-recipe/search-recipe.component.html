@@ -1,0 +1,107 @@
+<div class="parent-container">
+  <div class="child-container">
+    <h1><b>Search for your recipe!!
+    </b></h1><br>
+    <form>
+      <div class="form-group">
+        <div class="form-group col-lg-6 col-lg-offset-3 input-group">
+          <input #recipe class="form-control" placeholder="Recipe name" type="text">
+          <span class="input-group-addon">-</span>
+          <input #place class="form-control" placeholder="Place" type="text">
+          <span class="input-group-addon">-</span>
+          <button (click)="getVenues()" class="btn btn primary col-lg-2 col-lg-offset-5 " type="button">Go</button>
+        </div>
+        <br>
+
+      </div>
+    </form>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="pull-left">
+            <div class="panel panel-default col-6">
+              <div class="panel-heading">Cook it up!</div>
+              <div class="panel-body" style="overflow-y: scroll;height: 700px;width: 600px">
+
+                <div *ngFor="let recipe of recipeList" class="list-group-item clearfix">
+                  <div class="pull-left">
+                    <p class="list-group-item-heading">{{ recipe.label }}</p>
+                    <div class="row">
+                      <div class="col">
+                        <ul class="list-group-item-text">
+                          <li>
+                            <a href="{{recipe.url}}" class="list-group-item-text"><span style="color: blue">Click here for Recipe!</span></a>
+                          </li>
+                          <li>
+                            <p>Serves: {{recipe.yield}}</p>
+                          </li>
+                          <li>
+                            <p>Calories: {{recipe.calories}}</p>
+                          </li>
+                          <li>
+                            <p>Prep Time: {{recipe.totalTime}}mins</p>
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="col">
+                      <span class="pull-right">
+                      <img src="{{recipe.image}}" style="width:fit-content; height: fit-content;" align="center"/>
+                      </span>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div claa="pull-left">
+            <div class="panel panel-default col-6">
+              <div class="panel-heading">Dine-in!</div>
+              <div class="panel-body" style="overflow-y: scroll;height: 700px;width: 600px">
+
+                <div *ngFor="let venue of venueList" class="list-group-item clearfix">
+                  <div class="pull-left">
+                    <p class="list-group-item-heading">{{ venue.name }}</p>
+                    <div class="row">
+                      <div class="col">
+                        <ul class="list-group-item-text">
+                          <li>
+                            <p>Vibe: {{venue.categories[0].name}} </p>
+                          </li>
+                          <li>
+                            <p>City: {{venue.location.city}} </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                       <span class="pull-right">
+                       <a href="http://maps.google.com/maps?saddr={{currentLat}},{{currentLong}}
+                       &daddr={{venue.location.formattedAddress[0]}},{{venue.location.formattedAddress[1]}},{{venue.location.formattedAddress[2]}}">
+                         <img src="../../assets/google.png" style="width: 30px; height: 30px"/> View Map</a>
+                       </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><br><br>
+
+
+
